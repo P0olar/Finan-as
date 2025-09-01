@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
+import Account from "./pages/Account";
 
 axios.defaults.baseURL = "/";
 axios.defaults.withCredentials = true;
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/Account" element={<Account />} />
         </Routes>
       </BrowserRouter>
     </UserContextProvider>

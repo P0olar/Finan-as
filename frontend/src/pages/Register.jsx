@@ -34,7 +34,7 @@ const Register = () => {
   if (redirect || user) return <Navigate to="/dashboard" />
 
   return (
-    <section className="flex items-center py-50">
+    <section className="flex items-center ">
       <div className=" mx-auto flex w-full max-w-96 flex-col items-center gap-4">
         <h1 className=" text-3xl font-bold">Faça seu Cadastro</h1>
         <form onSubmit={handleSubit} className="flex w-full flex-col gap-2">
