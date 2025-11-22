@@ -5,6 +5,7 @@ import User from "./model.js";
 import bcrypt from "bcryptjs";
 import { JWTSign, JWTVerify } from "../../utils/jwt.js";
 
+
 const router = Router();
 const bcryptSalt = bcrypt.genSaltSync();
 

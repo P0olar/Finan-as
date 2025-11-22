@@ -8,7 +8,8 @@ export default defineConfig({
   server: {
     allowedHosts: true,
     proxy: {
-      "/users": "http://localhost:3001"
+      "/users": "http://localhost:3001",
+      "/report": "http://localhost:3001"
     }
   },
 });
