@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
 import Account from "./pages/Account";
+import Footer from "./components/Footer";
 
 axios.defaults.baseURL = "/";
 axios.defaults.withCredentials = true;
@@ -15,14 +16,19 @@ const App = () => {
   return (
     <UserContextProvider>
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/Account" element={<Account />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <div className=" flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/Account" element={<Account />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </UserContextProvider>
   );

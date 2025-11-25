@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex mx-auto max-w-7xl items-center justify-between px-4 sm:px-8 py-2">
         <Link to={user? "/dashboard" : "/"} className="flex items-center">
           <img className="h-20" src={logo} alt="Logo Projeto" />
-          <p className=" text-emerald-600 text-2xl font-semibold">Finanças</p>
+          <p className=" text-emerald-600 text-2xl font-semibold">Dotação</p>
         </Link>
 
         <div className="flex items-center rounded-full border border-gray-300 py-2 pr-4 pl-6 shadow-md gap-2">

@@ -1,6 +1,10 @@
 export const formatValue = (value) => {
-    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-}
+  if (value === null || value === undefined) return "R$ 0,00";
+  return Number(value).toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+};
 
 export const formatDate = (value) => {
   const date = new Date(value);
